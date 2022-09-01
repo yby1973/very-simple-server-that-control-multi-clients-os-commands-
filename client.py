@@ -2,7 +2,7 @@ import socket
 import os
 import time
 
-ip = "" # put here your ip
+ip = "" # put here your server ip
 port = 4444
 
 while True:
